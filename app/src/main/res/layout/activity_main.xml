@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+        <androidx.cardview.widget.CardView
+            android:layout_width="373sp"
+            android:layout_height="477sp"
+            android:foregroundGravity="center"
+            android:outlineAmbientShadowColor="#817878"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="43sp"
+                    android:layout_height="43sp"
+                    android:src="@drawable/instagram_logo_txt"
+                    />
+                <TextView
+                    android:layout_width="123sp"
+                    android:layout_height="25sp"
+                    android:textSize="20sp"
+                    android:text="@string/app_logo_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="315.06sp"
+                    android:layout_height="42.01sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:autofillHints="emailAddress"
+                    android:background="@drawable/round_shape"
+                    android:hint="  Phone no, Username,or Email"
+                    android:textColorHighlight="#E5E5E5"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textColorLink="#E5E5E5"
+                    android:textColorHint="#806C6565" />
+
+                <EditText
+                    android:layout_width="315.06sp"
+                    android:layout_height="42.01sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:autofillHints="password"
+                    android:background="@drawable/round_shape"
+                    android:contentDescription="password"
+                    android:hint="  Password"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:textColorHint="#806C6565"
+                    android:textColorLink="#E5E5E5"
+                    android:textColorHighlight="#E5E5E5"/>
+
+                <Button
+                    android:layout_width="315.06sp"
+                    android:layout_height="42.01sp"
+                    android:layout_marginTop="13sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/login_color"
+                    android:text="Login"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
